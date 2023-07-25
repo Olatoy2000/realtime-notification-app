@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Card from "./components/card/Card";
+import {posts} from "./data"
 const App = () => {
   const [username, setUsername] = useState("");
   const [user, setUser] = useState("");
@@ -12,7 +13,9 @@ const App = () => {
       {user ? (
         <>
           <Navbar />
-          <Card />
+          {posts.map((post) => (
+              <Card post={post} key={post.id} />
+          ))}
           <span className="username">{user}</span>
         </>
       ) : (
