@@ -1,0 +1,84 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+    width: 50vh;
+    border-radius: 5px;
+    border: 0.5px solid lightseagreen;
+}
+
+.login {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 50%;
+  padding: 10px;
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.username{
+    font-weight:bold ;
+    color: lightseagreen;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.navbar{
+    height: 50px;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+
+}
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    
+}
+
+.icon{
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.counter{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    background-color: red;
+    padding: 5px;
+    align-items: center;
+    top: -5px;
+    display: flex;
+    right: -5px;
+}
