@@ -6,7 +6,7 @@ const Card = ({ post }) => {
   return (
     <div className="card">
       <div className="info">
-        <img src={post.userImg} alt="" />
+        <img src={post.userImg} alt="" className="userImg" />
         <span className="">{post.fullName}</span>
       </div>
       <img src={post.postImg} alt="" className="postImg" />
@@ -26,7 +26,7 @@ const Card = ({ post }) => {
           height="20"
           className="cardIcon"
         />
-        <InfoCircle size="32" color="#FF8A65" className="cardIcon" />
+        <InfoCircle size="20" color="#FF8A65" className="cardIcon" />
       </div>
     </div>
   );
